@@ -1,4 +1,4 @@
-package dao;
+package lesson2Java;
 
 public class Product {
 	private Integer productId;

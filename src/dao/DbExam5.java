@@ -3,6 +3,9 @@ package dao;
 import java.sql.Connection;
 import java.util.List;
 
+import lesson2Java.Product;
+import lesson2Java.ProductDao;
+
 
 public class DbExam5 {
 	public static void main (String[] args) {
