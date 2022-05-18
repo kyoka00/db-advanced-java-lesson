@@ -16,6 +16,6 @@ public class DbDevExam5_Update {
 		changeProduct.setProductId(102);
 		productDao.update(changeProduct);
 		System.out.println("更新しました");
-
+		
 	}
 }

@@ -13,7 +13,7 @@ public class ProductDao {
 	private static final String SQL_SELECT_ALL = "SELECT product_id, product_name, price FROM products ORDER BY product_id";
 	private static final String SQL_FIND_BYID = "SELECT * from products where product_id = ?";
 	private static final String SQL_INSERT = "INSERT INTO products (product_name, price) VALUES (? , ?)";
-	private static final String SQL_UPDATE ="UPDATE product_name = ?, price = ? where product_id = ?";
+	private static final String SQL_UPDATE ="UPDATE products SET product_name = ?, price = ? where product_id = ?";
 	private static final String SQL_DELETE = "DELETE FROM products WHERE product_name = ?";
 	
 	public ProductDao (Connection connection) {
@@ -65,17 +65,17 @@ public class ProductDao {
 	}
 	
 	public void update(Product product) {
-		try (PreparedStatement stmt = connection.prepareStatement(SQL_UPDATE)){
+		try (PreparedStatement stmt = connection.prepareStatement(SQL_UPDATE)) {
 			stmt.setString(1, product.getProductName());
 			stmt.setInt(2, product.getPrice());
 			stmt.setInt(3, product.getProductId());
-			
+
 			stmt.executeUpdate();
-			
+
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}
-		}
+	}
 	
 	 public void delete(String userName) {
 	        try (PreparedStatement stmt = connection.prepareStatement(SQL_DELETE)) {

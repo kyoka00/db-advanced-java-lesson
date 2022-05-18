@@ -1,4 +1,4 @@
-package dao;
+package lesson2Java;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
