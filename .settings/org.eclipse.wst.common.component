@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="java-db-lesson1">
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/main"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/webapp"/>
+        <property name="context-root" value="java-db-lesson1"/>
+        <property name="java-output-path" value="/java-db-lesson1/bin"/>
+    </wb-module>
+</project-modules>
